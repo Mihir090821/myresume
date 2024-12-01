@@ -1,14 +1,14 @@
-#Image Getting
-From node:22.2
+# Image Getting
+FROM node:22.2
 
-#Working Directory
+# Working Directory
 WORKDIR /app
 
-# COPY Files
+# Copy Files
 COPY . .
 
-#Install Packages
+# Install Packages
 RUN npm install
 
-#run the project
-CMD ['node','app.js']
+# Run the project
+CMD ["node", "app.js"]
